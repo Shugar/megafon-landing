@@ -1,0 +1,17 @@
+$main-font-size: 17px;
+$main-line-height: 28px;
+$main-font-color: #323C46;
+$main-brand-color: #0A7BCC;
+
+// tools
+@import 'tools/_fonts';
+@import 'tools/_settings';
+@import 'tools/_normalize';
+
+// components
+@import 'components/_title';
+
+// for views
+.home-page {
+  @import 'pages/homepage/_main';
+}
