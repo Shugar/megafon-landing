@@ -357,6 +357,7 @@
 
 .slider-wrapper {
   padding-top: 80px;
+  padding-bottom: 60px;
 
   &__slider {
     padding: 0 25px;
@@ -394,5 +395,28 @@
 
   &__amount {
     margin-left: 5px;
+  }
+}
+
+.footer {
+  background: #731982;
+  padding: 35px 0;
+
+  &__title {
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 32px;
+  }
+
+  &__bottom {
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;
   }
 }
