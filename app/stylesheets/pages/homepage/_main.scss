@@ -152,3 +152,54 @@
   }
 }
 
+.starts {
+  padding-top: 100px;
+
+  &__title {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+
+    span {
+      color: #28B93C;
+    }
+  }
+
+  &__items {
+    margin-top: 55px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 216px;
+    height: 216px;
+    background: #73207F;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:not(:first-child) {
+      background: #28B93C;
+      margin-left: 30px;
+    }
+  }
+
+  &__button-wrapper {
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 56px;
+    display: inline-block;
+  }
+}
+
