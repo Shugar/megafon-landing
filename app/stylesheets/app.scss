@@ -11,5 +11,10 @@ $main-brand-color: #0A7BCC;
 // components
 @import 'components/_button';
 
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+
+
+
 // for views
 @import 'pages/homepage/_main';
