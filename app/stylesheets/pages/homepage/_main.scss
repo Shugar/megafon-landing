@@ -122,3 +122,33 @@
     }
   }
 }
+
+.company {
+  padding-top: 100px;
+
+  &__title {
+    font-size: 32px;
+    color: #000000;
+  }
+
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 25px;
+  }
+}
+
+.company-item {
+  width: 25%;
+  margin-top: 40px;
+  min-height: 167px;
+
+  &__description {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #888888;
+    line-height: 26px;
+    margin-top: 24px;
+  }
+}
+
