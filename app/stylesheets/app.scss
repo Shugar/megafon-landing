@@ -9,9 +9,7 @@ $main-brand-color: #0A7BCC;
 @import 'tools/_normalize';
 
 // components
-@import 'components/_title';
+@import 'components/_button';
 
 // for views
-.home-page {
-  @import 'pages/homepage/_main';
-}
+@import 'pages/homepage/_main';

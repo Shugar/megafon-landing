@@ -1,11 +1,34 @@
 doctype html
 html
   head
-    title Tumasov brunch template
+    title Мегафон
     include partials/head
 
-  body.home-page
-    .home-page__main
+  body
+    .head
       .container
-        .title
-          | Hello!
+        .head__header.header
+          .header__logo
+            img(src="./images/logo.png")
+          .header__phone
+            | 8 (800) 550 41-14 
+        .inner
+          .head__center-text.head-text
+            .head-text__green-txt
+              | Включайся!
+            .head-text__main-txt
+              span МегаФон 
+              | — компания твоих возможностей
+            .head-text__buttons.head-buttons
+              .button.button_violet.head-buttons__button
+                img(src="./images/arrow.svg")
+                .button__text
+                  | Узнать больше
+              .head-buttons__button.head-buttons__button_play
+                img(src="./images/play-button.svg")
+                .button__text 
+                  | Смотреть видео
+        
+
+
+          
