@@ -5,12 +5,16 @@ html
     include partials/head
 
   body
+    .video-container
+      .video-container-close
+        | Закрыть
+      <div id='youtube-video-player'></div>
     .head
       .container
         .head__header.header
           .header__logo
             img(src="./images/logo.png")
-          .header__phone
+          a.header__phone(href="tel:78005504114")
             | 8 (800) 550 41-14 
         .inner
           .head__center-text.head-text
@@ -20,7 +24,7 @@ html
               span МегаФон 
               | — компания твоих возможностей
             .head-text__buttons.head-buttons
-              .button.button_violet.head-buttons__button
+              a.button.button_violet.head-buttons__button(href="#first")
                 img(src="./images/arrow.svg")
                 .button__text
                   | Узнать больше
@@ -28,7 +32,7 @@ html
                 img(src="./images/play-button.svg")
                 .button__text 
                   | Смотреть видео
-    .career
+    .career#first
       .inner
         .career__title
           | Карьера в 
@@ -46,7 +50,7 @@ html
         .career__description
           |45% руководителей компании — «выпускники» Контактного центра. 
         
-        .career__button.button.button_green
+        a.career__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
           | Начни карьеру в Мегафон
 
     .company
@@ -123,7 +127,7 @@ html
           .starts__item
 
         .starts__button-wrapper
-          .button.button_violet.starts__button
+          a.button.button_violet.starts__button(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
             | Начни карьеру в Мегафон
 
     .pick-yours
@@ -137,7 +141,7 @@ html
           .pick-yours__right
             .pick-yours__select.city-select
               select.city-select__select
-                option Москва
+                option Ростов-на-Дону
             .pick-yours__posible
               | Все возможные вакансии
         
@@ -146,7 +150,7 @@ html
             .pick-card__title
               |Специалист по телефонным продажам клиентам корпоративного бизнеса
             .pick-card__footer
-              .button.button_violet.pick-card__button.hidden
+              .button.button_violet.pick-card__button.hidden(data-id="0")
                 | Выбрать
               .pick-card__icon
                 img(src="./images/active.svg")
@@ -154,7 +158,7 @@ html
             .pick-card__title
               |Специалист по продажам в федеральном телемаркетинге
             .pick-card__footer
-              .button.button_violet.pick-card__button
+              .button.button_violet.pick-card__button(data-id="1")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -162,7 +166,7 @@ html
             .pick-card__title
               |Специалист по обслуживанию корпоративных клиентов
             .pick-card__footer
-              .button.button_violet.pick-card__button
+              .button.button_violet.pick-card__button(data-id="2")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -170,7 +174,7 @@ html
             .pick-card__title
               |Специалист по федеральному контролю качества
             .pick-card__footer
-              .button.button_violet.pick-card__button
+              .button.button_violet.pick-card__button(data-id="3")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -178,41 +182,165 @@ html
             .pick-card__title
               |Специалист по работе с претензиями
             .pick-card__footer
-              .button.button_violet.pick-card__button
+              .button.button_violet.pick-card__button(data-id="4")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
           .pick-yours__card.pick-card
             .pick-card__title
-              |Контактный центр
+              | Специалист по обслуживанию в контактном центре
             .pick-card__footer
-              .button.button_violet.pick-card__button
+              .button.button_violet.pick-card__button(data-id="5")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
 
-        .pick-yours__text.pick-text
+        .pick-yours__text.pick-text(data-id="0")
           .pick-text__title
             | Специалист по телефонным продажам клиентам корпоративного бизнеса
+          .pick-text__txt
+            | Достигай вершин в продажах вместе с нами!
+          .pick-text__list.pick-text-list
+            .pick-text-list__item
+              | Если продажи физическим лицам для тебя пройденный этап.
+            .pick-text-list__item
+              | Если ты хочешь общаться с первыми лицами Компаний клиентов.
+            .pick-text-list__item
+              | Если ты ЗА интересные сделки с высокотехнологичными продуктами.
+            .pick-text-list__item
+              | Если ты хочешь первым узнавать о всех новинках Компании!
+          
+          .pick-text__description
+            | 95% сотрудников получают премию за результаты в продажах уже в первый месяц работы. Всего за 1 неделю обучения ты получишь всю необходимую информацию, чтобы начать успешно работать в федеральном телемаркетинге!
+
+          .pick-text__hr
+
+          .pick-text__gray-text
+            | Записывайся на собеседование и открывай для себя возможности карьерного роста в направлении продаж корпоративным клиентам. 
+          
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Начни карьеру в Мегафон
+      
+
+        .pick-yours__text.pick-text(data-id="1")
+          .pick-text__title
+            | Специалист по продажам в федеральном телемаркетинге
           .pick-text__txt
             | Чем предстоит заниматься:
           .pick-text__list.pick-text-list
             .pick-text-list__item
-              | Совершать звонки действующим клиентам Компании
+              | Совершать звонки действующим клиентам Компании.
             .pick-text-list__item
-              | Помогать нашим клиентам подбирать для себя оптимальные решения для общения, пользования интернетом и другими сервисами Компании
+              | Помогать нашим клиентам подбирать для себя оптимальные решения для общения, пользования интернетом и другими сервисами Компании.
             .pick-text-list__item
-              | Презентовать специальные предложения, услуги и персональные решения с учётом потребностей клиента
+              | Презентовать специальные предложения, услуги и персональные решения с учётом потребностей клиента.
           
           .pick-text__description
-            |95% сотрудников получают премию за результаты в продажах уже в первый месяц работы. Всего за 1 неделю обучения ты получишь всю необходимую информацию, чтобы начать успешно работать в федеральном телемаркетинге!
+            | 95% сотрудников получают премию за результаты в продажах уже в первый месяц работы. Всего за 1 неделю обучения ты получишь всю необходимую информацию, чтобы начать успешно работать в федеральном телемаркетинге!
 
           .pick-text__hr
 
           .pick-text__gray-text
             | Реализуй свой потенциал и добейся реально крутых результатов в нашей команде. Присоединяйся! 
           
-          .pick-text__button.button.button_green
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Начни карьеру в Мегафон
+      
+
+        .pick-yours__text.pick-text(data-id="2")
+          .pick-text__title
+            | Специалист по обслуживанию корпоративных клиентов
+          .pick-text__txt
+            | Включайся в нашу команду:
+          .pick-text__list.pick-text-list
+            .pick-text-list__item
+              | Общайся  с представителями бизнеса по вопросам корпоративной связи через е-mail.
+            .pick-text-list__item
+              | Продвигай новые интересные услуги, созданные специально для бизнеса. 
+
+          .pick-text__description
+            | Индивидуальная программа обучения, наставничество с первого дня в компании открывают возможности для уверенной и профессиональной работы с нашими корпоративными клиентами.
+
+          .pick-text__hr
+
+          .pick-text__gray-text
+            | Если ты любишь переписываться больше, чем говорить по телефону, эта вакансия для тебя!
+          
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Начни карьеру в Мегафон
+      
+
+        .pick-yours__text.pick-text(data-id="3")
+          .pick-text__title
+            | Специалист по федеральному контролю качества
+          .pick-text__txt
+            | Чем предстоит заниматься:
+          .pick-text__list.pick-text-list
+            .pick-text-list__item
+              | Твоя главная задача – обеспечить счастье клиента.
+            .pick-text-list__item
+              | Проявляя экспертизу в вопросах обслуживания клиентов – ты делаешь нашу работу качественной и легкой.
+            .pick-text-list__item
+              | Для этого тебе нужно проводить мониторинг обслуживания наших специалистов, анализировать их действия и разрабатывать мероприятия по улучшению качества обслуживания.
+
+          .pick-text__hr
+
+          .pick-text__gray-text
+            | Если ты считаешь себя экспертом в обслуживании клиентов по телефону – нажимай откликнуться!
+          
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Начни карьеру в Мегафон
+      
+
+        .pick-yours__text.pick-text(data-id="4")
+          .pick-text__title
+            | Специалист по работе с претензиями
+          .pick-text__txt
+            | Чем предстоит заниматься:
+          .pick-text__list.pick-text-list
+            .pick-text-list__item
+              | Находи решения в самых интересных и запутанных ситуациях!
+            .pick-text-list__item
+              | Обрабатывай претензионные обращения клиентов и устраняй причины проблем.
+            .pick-text-list__item
+              | Презентовать специальные предложения, услуги и персональные решения с учётом потребностей клиента.
+          
+          .pick-text__description
+            | Наши сотрудники сначала ищут решение и только потом связываются с клиентом. Будь готов хорошо прокачать скиллы по выстраиванию отношений, получить бесценный опыт реальной помощи в решении самых разных вопросов наших клиентов. 
+
+          .pick-text__hr
+
+          .pick-text__gray-text
+            | Если ты уже профессионал в консультировании, знаешь что такое клиентский сервис или отлично разбираешься в услугах мобильной связи, любишь решать нестандартные задачи – тебе к нам!
+          
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Начни карьеру в Мегафон
+      
+
+        .pick-yours__text.pick-text(data-id="5")
+          .pick-text__title
+            | Специалист по обслуживанию в контактном центре
+          .pick-text__txt
+            | Чем предстоит заниматься:
+          .pick-text__list.pick-text-list
+            .pick-text-list__item
+              | Принимай входящие звонки от клиентов Компании МегаФон.
+            .pick-text-list__item
+              | Консультируй по тарифам и услугам компании.
+            .pick-text-list__item
+              | Помогай нашим клиентам подбирать для себя оптимальные решения для общения, пользования интернетом и другими сервисами.
+            .pick-text-list__item
+              | Будь в курсе всех новинок в сфере мобильной связи.
+          
+          .pick-text__description
+            | За 18 дней обучающего интенсива ты получишь всю необходимую информацию, чтобы начать успешно работать в Контактном центре МегаФон. С первых дней тебя ждет доступ к корпоративной библиотеке и курсам МегаАкадемии, а также продуманная программа тренингов. 99%  наших специалистов в контактном центре повышают свою ступень в первый год работы и становятся настоящими экспертами в области мобильной связи.   
+
+          .pick-text__hr
+
+          .pick-text__gray-text
+            | Наши контактные центры хорошая стартовая площадка для начала карьеры и отличное место открытых возможностей для профессионалов.
+          
+          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
             | Начни карьеру в Мегафон
       
     .slider-wrapper
@@ -239,7 +367,7 @@ html
         .footer__bottom
           .footer__left
             .footer__call
-              | Звони 8 (800) 550 41 14
+              | Звони <a href="tel:78005504114">8 (800) 550 41 14</a>
             .footer__write
               | или пиши на ssc_rabota@megafon.ru с темой письма «Работа в КЦ». 
             .footer__answer
