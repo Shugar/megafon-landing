@@ -32,7 +32,7 @@ html
                 img(src="./images/play-button.svg")
                 .button__text 
                   | Смотреть видео
-    .career#first
+    .career
       .inner
         .career__title
           | Карьера в 
@@ -51,7 +51,7 @@ html
           |45% руководителей компании — «выпускники» Контактного центра. 
         
         a.career__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-          | Начни карьеру в Мегафон
+          | Начни карьеру в МегаФон
 
     .company
       .inner
@@ -118,7 +118,7 @@ html
     .starts
       .inner
         .starts__title
-          span Мегафон. 
+          span МегаФон. 
           | Начинается с тебя
         .starts__items
           .starts__item
@@ -127,10 +127,10 @@ html
           .starts__item
 
         .starts__button-wrapper
-          a.button.button_violet.starts__button(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+          a.button.button_violet.starts__button(href="#first")
+            | Начни карьеру в МегаФон
 
-    .pick-yours
+    .pick-yours#first
       .inner
         .pick-yours__header
           .pick-yours__title
@@ -150,7 +150,7 @@ html
             .pick-card__title
               |Специалист по телефонным продажам клиентам корпоративного бизнеса
             .pick-card__footer
-              .button.button_violet.pick-card__button.hidden(data-id="0")
+              a.button.button_violet.pick-card__button.hidden(data-id="0" href="#specialist1")
                 | Выбрать
               .pick-card__icon
                 img(src="./images/active.svg")
@@ -158,7 +158,7 @@ html
             .pick-card__title
               |Специалист по продажам в федеральном телемаркетинге
             .pick-card__footer
-              .button.button_violet.pick-card__button(data-id="1")
+              a.button.button_violet.pick-card__button(data-id="1" href="#specialist2")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -166,7 +166,7 @@ html
             .pick-card__title
               |Специалист по обслуживанию корпоративных клиентов
             .pick-card__footer
-              .button.button_violet.pick-card__button(data-id="2")
+              a.button.button_violet.pick-card__button(data-id="2" href="#specialist3")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -174,7 +174,7 @@ html
             .pick-card__title
               |Специалист по федеральному контролю качества
             .pick-card__footer
-              .button.button_violet.pick-card__button(data-id="3")
+              a.button.button_violet.pick-card__button(data-id="3" href="#specialist4")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -182,7 +182,7 @@ html
             .pick-card__title
               |Специалист по работе с претензиями
             .pick-card__footer
-              .button.button_violet.pick-card__button(data-id="4")
+              a.button.button_violet.pick-card__button(data-id="4" href="#specialist5")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
@@ -190,12 +190,12 @@ html
             .pick-card__title
               | Специалист по обслуживанию в контактном центре
             .pick-card__footer
-              .button.button_violet.pick-card__button(data-id="5")
+              a.button.button_violet.pick-card__button(data-id="5" href="#specialist6")
                 | Выбрать
               .pick-card__icon.hidden
                 img(src="./images/active.svg")
 
-        .pick-yours__text.pick-text(data-id="0")
+        .pick-yours__text.pick-text(data-id="0" id="specialist1")
           .pick-text__title
             | Специалист по телефонным продажам клиентам корпоративного бизнеса
           .pick-text__txt
@@ -219,10 +219,10 @@ html
             | Записывайся на собеседование и открывай для себя возможности карьерного роста в направлении продаж корпоративным клиентам. 
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
 
-        .pick-yours__text.pick-text(data-id="1")
+        .pick-yours__text.pick-text(data-id="1" id="specialist2")
           .pick-text__title
             | Специалист по продажам в федеральном телемаркетинге
           .pick-text__txt
@@ -244,10 +244,10 @@ html
             | Реализуй свой потенциал и добейся реально крутых результатов в нашей команде. Присоединяйся! 
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
 
-        .pick-yours__text.pick-text(data-id="2")
+        .pick-yours__text.pick-text(data-id="2" id="specialist3")
           .pick-text__title
             | Специалист по обслуживанию корпоративных клиентов
           .pick-text__txt
@@ -267,10 +267,10 @@ html
             | Если ты любишь переписываться больше, чем говорить по телефону, эта вакансия для тебя!
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
 
-        .pick-yours__text.pick-text(data-id="3")
+        .pick-yours__text.pick-text(data-id="3" id="specialist4")
           .pick-text__title
             | Специалист по федеральному контролю качества
           .pick-text__txt
@@ -289,10 +289,10 @@ html
             | Если ты считаешь себя экспертом в обслуживании клиентов по телефону – нажимай откликнуться!
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
 
-        .pick-yours__text.pick-text(data-id="4")
+        .pick-yours__text.pick-text(data-id="4" id="specialist5")
           .pick-text__title
             | Специалист по работе с претензиями
           .pick-text__txt
@@ -314,10 +314,10 @@ html
             | Если ты уже профессионал в консультировании, знаешь что такое клиентский сервис или отлично разбираешься в услугах мобильной связи, любишь решать нестандартные задачи – тебе к нам!
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
 
-        .pick-yours__text.pick-text(data-id="5")
+        .pick-yours__text.pick-text(data-id="5" id="specialist6")
           .pick-text__title
             | Специалист по обслуживанию в контактном центре
           .pick-text__txt
@@ -341,7 +341,7 @@ html
             | Наши контактные центры хорошая стартовая площадка для начала карьеры и отличное место открытых возможностей для профессионалов.
           
           a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в Мегафон
+            | Начни карьеру в МегаФон
       
     .slider-wrapper
       .container
@@ -369,7 +369,7 @@ html
             .footer__call
               | Звони <a href="tel:78005504114">8 (800) 550 41 14</a>
             .footer__write
-              | или пиши на ssc_rabota@megafon.ru с темой письма «Работа в КЦ». 
+              | или пиши на ssc_rabota@megafon.ru с темой письма «Работа в МегаФон». 
             .footer__answer
               | Мы с радостью ответим!
           .footer__right
