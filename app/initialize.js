@@ -17,7 +17,9 @@ $(document).ready(() => {
   $('.slider').slick({
     slidesToShow: 3,
     infinite: true,
-    arrows: true
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2500
   })
 
   $('.slider').on('beforeChange', (e, slick, curr, next) => {

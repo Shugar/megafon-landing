@@ -10,10 +10,11 @@ html
         | Закрыть
       <div id='youtube-video-player'></div>
     .head
+      .opacity
       .container
         .head__header.header
           .header__logo
-            img(src="./images/logo.png")
+            img(src="./images/logo.svg")
           a.header__phone(href="tel:78005504114")
             | 8 (800) 550 41-14 
         .inner
@@ -36,7 +37,7 @@ html
       .inner
         .career__title
           | Карьера в 
-          span «МегаФон»
+          span МегаФоне
         .career__list.career-list
           .career-list__item
             | У тебя есть, высшее, неоконченное высшее или средне-специальное образование?
@@ -46,12 +47,9 @@ html
             | Ты нацелен на личностный и профессиональный рост?
           .career-list__item
             | Значит, мы ищем именно тебя!
-        
-        .career__description
-          |45% руководителей компании — «выпускники» Контактного центра. 
-        
-        a.career__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-          | Начни карьеру в МегаФон
+
+        a.career__button.button.button_green(href="#first")
+          | Начни карьеру в МегаФоне
 
     .company
       .inner
@@ -128,22 +126,24 @@ html
 
         .starts__button-wrapper
           a.button.button_violet.starts__button(href="#first")
-            | Начни карьеру в МегаФон
+            | Начни карьеру в МегаФоне
 
     .pick-yours#first
       .inner
         .pick-yours__header
-          .pick-yours__title
-            | Карьера в 
-            span твоих 
-            | руках!
-            | Выбирай своё.
+          
           .pick-yours__right
+            .pick-yours__title
+              | Карьера в 
+              span твоих 
+              | руках!
+              br
+              | Выбирай своё.
             .pick-yours__select.city-select
               select.city-select__select
                 option Ростов-на-Дону
-            .pick-yours__posible
-              | Все возможные вакансии
+            //- .pick-yours__posible
+            //-   | Все возможные вакансии
         
         .pick-yours__cards
           .pick-yours__card.pick-card
@@ -218,8 +218,8 @@ html
           .pick-text__gray-text
             | Записывайся на собеседование и открывай для себя возможности карьерного роста в направлении продаж корпоративным клиентам. 
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
 
         .pick-yours__text.pick-text(data-id="1" id="specialist2")
@@ -243,8 +243,8 @@ html
           .pick-text__gray-text
             | Реализуй свой потенциал и добейся реально крутых результатов в нашей команде. Присоединяйся! 
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
 
         .pick-yours__text.pick-text(data-id="2" id="specialist3")
@@ -266,8 +266,8 @@ html
           .pick-text__gray-text
             | Если ты любишь переписываться больше, чем говорить по телефону, эта вакансия для тебя!
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
 
         .pick-yours__text.pick-text(data-id="3" id="specialist4")
@@ -288,8 +288,8 @@ html
           .pick-text__gray-text
             | Если ты считаешь себя экспертом в обслуживании клиентов по телефону – нажимай откликнуться!
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
 
         .pick-yours__text.pick-text(data-id="4" id="specialist5")
@@ -313,8 +313,8 @@ html
           .pick-text__gray-text
             | Если ты уже профессионал в консультировании, знаешь что такое клиентский сервис или отлично разбираешься в услугах мобильной связи, любишь решать нестандартные задачи – тебе к нам!
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
 
         .pick-yours__text.pick-text(data-id="5" id="specialist6")
@@ -340,8 +340,8 @@ html
           .pick-text__gray-text
             | Наши контактные центры хорошая стартовая площадка для начала карьеры и отличное место открытых возможностей для профессионалов.
           
-          a.pick-text__button.button.button_green(href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
-            | Начни карьеру в МегаФон
+          a.pick-text__button.button.button_green(target="_blank" href="https://interview.stage.skillaz.co/?vacancyId=5aa69852bdfa9500019b33ee")
+            | Оставить заявку
       
     .slider-wrapper
       .container
@@ -369,7 +369,7 @@ html
             .footer__call
               | Звони <a href="tel:78005504114">8 (800) 550 41 14</a>
             .footer__write
-              | или пиши на ssc_rabota@megafon.ru с темой письма «Работа в МегаФон». 
+              | или пиши на ssc_rabota@megafon.ru с темой письма «Работа в МегаФоне». 
             .footer__answer
               | Мы с радостью ответим!
           .footer__right
